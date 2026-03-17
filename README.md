@@ -2,6 +2,14 @@
 
 Upload any document and have an AI conversation with it. Uses Retrieval-Augmented Generation (RAG) to ground answers in your actual content — no hallucinations.
 
+## Why I Built This
+
+**The Problem:** ChatGPT and other LLMs are powerful but they hallucinate — they confidently make up information that isn't in your documents. If you paste a 50-page PDF into ChatGPT, it loses context. If you ask about your company's internal docs, it has no idea. Teams waste hours manually searching through documentation, SOPs, and codebases to find answers that should be instant.
+
+**The Solution:** Upload your documents (PDFs, Word docs, code, CSVs — any format), and this system chunks them, embeds them into a vector database, and lets you have a grounded conversation where every answer comes from YOUR actual content with source citations. The AI can say "Based on page 7 of architecture.pdf..." instead of hallucinating. Supports streaming responses, conversation memory, and works with OpenAI or local models via Ollama.
+
+**Built to solve a real pain point** I've seen across multiple clients — knowledge is trapped in documents that nobody reads. This turns static docs into an interactive knowledge base that anyone on the team can query in natural language.
+
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                         Architecture                                │
